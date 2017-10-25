@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
 
   # gets the new user's info from the params hash, creates a new user, signs them in, and then redirects them
   post '/registrations' do
-
+    puts params
     redirect '/users/home'
   end
 
