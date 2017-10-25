@@ -11,10 +11,12 @@ class ApplicationController < Sinatra::Base
     erb :home
   end
 
+  # Render the sign-up form view
   get '/registrations/signup' do
     erb :'/registrations/signup'
   end
 
+  # gets the new user's info from the params hash, creates a new user, signs them in, and then redirects them 
   post '/registrations' do
     
     redirect '/users/home'
