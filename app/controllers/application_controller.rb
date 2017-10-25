@@ -26,7 +26,7 @@ class ApplicationController < Sinatra::Base
   get '/sessions/login' do
     erb :'sessions/login'
   end
-  
+
   # grabs the user's info from the params hash, looks to match that info against the existing entries in the user database, and, if a matching entry is found, signs the user in
   post '/sessions' do
 
